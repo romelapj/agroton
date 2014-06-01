@@ -9,23 +9,82 @@
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>
 </head>
 <body>
-	<div data-role="page" >
-		<div data-role="header" data-theme="b">
-			<h1>Agro</h1>
+	<div id="principal" data-role="page" >
+		
+		<div data-role="content">
+			<input id="busqueda_palabra" type="search">
+
+			<a href="#lista" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Left</a>
 		</div>
 
-		<ul data-role="listview">
-			<li>Elemento 1</li>
-			<li>Elemento 2</li>
-			<li>Elemento 3</li>
-			<li>Elemento 4</li>
-			<li>Elemento 5</li>
-			<li>Elemento 6</li>
-			<li>Elemento 7</li>
-		</ul>
+
+		
 		<div data-role="footer">
-			<h6>Inandina &copy; 2014</h6> 
+			<a href="#twitter" data-role="button">twitter</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Mira este tweet" data-via="romelapj" data-related="inandina" data-hashtags="Agroton" data-role="button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</div>
 	</div>
+
+
+
+
+	<!-- Pagina Twitter -->
+	<div id="twitter" data-role="page">
+		<div data-role="header">
+			<h1>Twitter</h1>
+		</div>
+		<a class="twitter-timeline" href="https://twitter.com/romelapj" data-widget-id="380710175692189697">Tweets por @romelapj hola</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+	</div>
+
+
+
+
+	<!-- lista-->
+	<div id="lista" data-role="page">
+		<div data-role="header">
+			<h1>Twitter</h1>
+		</div>
+		
+
+		<div>
+			<input type='text' id="lista_busqueda">
+			<ul 
+					id="contenedor_lista1"
+			    data-role="listview"  data-filter-placeholder="Search fruits..." data-inset="true">
+			    
+			</ul>
+		</div>
+	
+	</div>
+
+
+
+
+<div id="servicio" data-role="page">
+		<div data-role="header">
+			<h1>Cursos Virtuales</h1>
+		</div>
+		
+
+		<div>
+			
+			nombre:   <label id="nombre_1" for=""></label><hr>
+			descripcion:   <label id="descripcion_1" for=""></label><hr>
+			pasos:   <label id="pasos_1" for=""></label><hr>
+			requisitos:   <label id="requisitos_1" for=""></label><hr>
+			pagos:   <label id="pagos_1" for=""></label>		<hr>
+			documentacion:   <label id="documentacion_1" for=""></label><hr>		
+			ubicacion:   <label id="ubicacion_1" for=""></label><hr>				
+
+
+		</div>
+	
+	</div>
+<script src="js/mijs.js"></script>
 </body>
 </html>
